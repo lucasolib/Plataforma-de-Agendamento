@@ -1,3 +1,185 @@
-.bemvindo {
+@media (max-width: 768px) {
+  #secaoIntroducao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #introducaoArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    order: 1;
+  }
+
+  #bemVindo {
+    text-align: center;
+  }
+
+  #fotoPerfil {
+    width: 80%;
+    max-width: 300px;
+    order: 2;
+    margin-top: 1rem;
+  }
+
+  #introducao {
+    width: 100%;
+    text-align: justify;
+    order: 3;
+    margin-top: 1rem;
+  }
+}
+
+#paginaInicial {
+  font-family: 'Georgia', serif;
+  background-color: #fff;
   color: #aa8471;
+  padding: 2rem;
+  background-image: url('../public/estrelas.png');
+  background-repeat: repeat;
+  background-size: 100px;
+  position: relative;
+}
+
+#secaoIntroducao {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.titulo {
+  font-size: 2rem;
+  color: #a64b7b;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#introducaoArea {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+#introducao {
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #aa8471;
+  text-align: justify;
+}
+
+#bemVindo {
+  font-size: 2rem;
+  color: #a64b7b;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+#fotoPerfil {
+  width: 300px;
+  height: auto;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+}
+
+.texto {
+  width: 80%;
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+#secaoCadastro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fdf3f9;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(166, 75, 123, 0.2);
+  gap: 2rem;
+}
+
+#tituloJogos {
+  font-size: 2rem;
+  color: #a64b7b;
+  font-weight: bold;
+  text-align: center;
+}
+
+#fotoCartas {
+  width: 200px; /* Controle fixo da imagem */
+  height: auto;
+  object-fit: contain; /* Garante que a imagem se ajuste sem esticar */
+  flex-shrink: 0; /* Não deixa a imagem encolher */
+}
+
+#conteudoCadastro {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px; /* Limite para não estourar em telas grandes */
+}
+
+#cadastroAcoes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+#explicacaoJogos {
+  flex: 1; /* Ocupa o espaço que sobrar */
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+  min-width: 200px; /* Evita ficar esmagado */
+}
+
+#textoCadastro {
+  font-size: 1.1rem;
+  color: #5a3d5c;
+}
+
+#botaoCadastro {
+  background-color: #7c1e4e;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#botaoCadastro:hover {
+  background-color: #a64b7b;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animarEntrada {
+  animation: fadeInUp 1s ease forwards;
 }
