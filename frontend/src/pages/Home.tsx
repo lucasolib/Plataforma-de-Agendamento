@@ -1,4 +1,4 @@
-import '../../themes/pages/home.css';
+import '../themes/pages/home.css';
 
 function Home() {
 
