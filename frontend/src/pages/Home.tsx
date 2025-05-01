@@ -6,7 +6,7 @@ function Home() {
   return (
     <main id='paginaInicial'>
       <section id='secaoIntroducao'>
-        <img
+      <img
           alt='Foto exibindo um hom em de cabelos brancos, com um rosto simpático e vestes azuis com desenhos coloridos. Suas mãos estão apoiadas em uma mesa
           coberta com um pano vermelho e com cartas de cigano organizadas em cima dela.'
           src='/Robson.png'
@@ -15,16 +15,10 @@ function Home() {
         />
         <div id="introducaoArea" className='animarEntrada'>
           <h1 id='bemVindo' className='titulo'>Seja bem vindo!</h1>
-          <p className='texto' id='introducao'> &nbsp;&nbsp;&nbsp; 
+          <p className='texto' id='introducao'>
             Se você busca respostas, orientação espiritual ou quer enxergar com mais clareza os caminhos da sua vida, conheça o trabalho
             de Robson de Iansã, um respeitado pai de santo e especialista em jogos com baralho cigano. <br />
-            &nbsp;&nbsp;&nbsp;
-            Com anos de dedicação ao sagrado e uma conexão profunda com os orixás, especialmente com Iansã — senhora dos ventos, das transformações e revelações —, 
-            Robson tornou-se referência para quem procura um jogo sério, verdadeiro e acolhedor. <br />
-            &nbsp;&nbsp;&nbsp;
-            🃏 O baralho cigano é uma ferramenta poderosa de leitura energética e espiritual, capaz de revelar situações ocultas, alertar sobre perigos e 
-            apontar decisões mais favoráveis nas áreas do amor, finanças, saúde e vida espiritual. <br />
-            ✨ Por que marcar uma consulta com Robson de Iansã? <br />
+            Por que marcar uma consulta com Robson de Iansã? <br />
             - Atendimento humanizado e direto <br />
             - Consultas online ou presenciais <br />
             - Sigilo absoluto e respeito à sua fé <br />
