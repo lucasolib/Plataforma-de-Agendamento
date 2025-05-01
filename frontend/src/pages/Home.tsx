@@ -1,4 +1,3 @@
-import React from 'react';
 import '../../themes/pages/home.css';
 
 function Home() {
