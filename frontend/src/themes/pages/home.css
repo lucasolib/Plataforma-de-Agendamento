@@ -31,7 +31,7 @@
 }
 
 #bemVindo {
-  font-size: 18px;
+  font-size: 16px;
   color: #aa8471;
   font-weight: bold;
   text-align: left;
@@ -41,7 +41,7 @@
 
 #introducao {
   width: 100%;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 18px;
   text-align: justify;
   max-width: 250px;
@@ -66,25 +66,25 @@
 #conteudoCadastro {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
   gap: 2rem;
   width: 100%;
   max-width: 1200px;
 }
 
 #fotoCartas {
-  width: 150px;
-  margin-top: 30px;
   height: auto;
-  object-fit: contain;
-  flex-shrink: 0;
+  margin-top: 30px;
   margin-left: 5px;
+  width: 150px;
+  position: relative;
+  top: -20px;
 }
 
 #explicacaoJogos {
   flex: 1;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.6;
   text-align: justify;
   min-width: 200px;
@@ -106,7 +106,7 @@
 }
 
 #textoCadastro {
-  font-size: 12px;
+  font-size: 13px;
   color: black;
 }
 
@@ -114,8 +114,8 @@
   background-color: #63061c;
   color: white;
   border: none;
-  padding: 0.5rem 0.89rem;
-  font-size: 15px;
+  padding: 0.4rem 0.7rem;
+  font-size: 14px;
   border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s;
