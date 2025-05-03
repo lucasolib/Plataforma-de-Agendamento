@@ -23,7 +23,7 @@ function Home() {
         </div>
       </section>
       <article id='secaoCadastro'>
-        <h1 className='titulo' id='tituloJogos'>Como funcionam os Jogos?</h1>
+        <h1 className='titulo' id='tituloJogos'>como funcionam os jogos?</h1>
         <div id='conteudoCadastro'>
           <img
             alt='Cartas empilhadas uma sobre a outra e no topo delas, a primeira, está decorada com uma estrela de 5 pontas, outras estrelas menores a sua volta e um circulo'
