@@ -130,9 +130,20 @@
   background-color: #8f102e;
 }
 
+#secaoFeedback {
+  background-color: #63061c;
+  color: white;
+}
+
+#tituloFeedback {
+  font-family: 'playfair';
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
 .titulo {
   font-weight: bold;
-  text-align: center;
+  text-align: start;
   margin-bottom: 1rem;
 }
 
@@ -140,6 +151,28 @@
   line-height: 1.8;
   text-align: justify;
   color: black;
+}
+
+.feedback{
+  display: flex;
+  margin: 10px 0;
+}
+
+.fotoFeedback {
+  border-radius: 100%;
+  width: 100px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.textoFeedback {
+  
+}
+
+.conteudoFeedback {
+  background-color: #6a6a80;
+  border-radius: 10px;
+  width: 100%;
 }
 
 @keyframes fadeInUp {

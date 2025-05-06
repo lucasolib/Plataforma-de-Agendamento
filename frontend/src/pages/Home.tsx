@@ -23,7 +23,7 @@ function Home() {
         </div>
       </section>
       <article id='secaoCadastro'>
-        <h1 className='titulo' id='tituloJogos'>como funcionam os jogos?</h1>
+        <h1 className='titulo' id='tituloJogos'>Como funcionam os jogos?</h1>
         <div id='conteudoCadastro'>
           <img
             alt='Cartas empilhadas uma sobre a outra e no topo delas, a primeira, está decorada com uma estrela de 5 pontas, outras estrelas menores a sua volta e um circulo'
@@ -40,6 +40,30 @@ function Home() {
           Marque já uma consulta ou tire suas dúvidas
           </label>
           <button id='botaoCadastro'>Cadastre-se</button>
+        </div>
+      </article>
+      <article id='secaoFeedback'>
+        <h1 className='titulo' id='tituloFeedback'>Avaliações</h1>
+        <div className='feedback'>
+          <img
+          alt='Foto da pessoa responsável pela conta que aplicou o feedback.'
+          src='/pessoa1-placeholder.jpg'
+          className='fotoFeedback'
+          />
+          <div className='conteudoFeedback'>
+            <div>
+              {[1, 2, 3, 4, 5].map((estrela) => (
+                <span
+                  key={estrela}
+                  style={{ color: estrela <= 4 ? 'gold' : 'gray' }}
+                  id='estrela'
+                >
+                  ★
+                </span>
+              ))}
+            </div>
+            <p className='texto' id='textoFeedback'>C"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus</p>
+          </div>
         </div>
       </article>
     </main>
