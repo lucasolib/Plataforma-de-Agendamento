@@ -1,5 +1,7 @@
 import '../themes/pages/home.css'
 function Home() {
+  const rating: Array<number> = [4, 5]
+
 
   return (
     <main id='paginaInicial'>
@@ -51,18 +53,35 @@ function Home() {
           className='fotoFeedback'
           />
           <div className='conteudoFeedback'>
-            <div>
+            <div id='classificacao'>
               {[1, 2, 3, 4, 5].map((estrela) => (
-                <span
+                <img
                   key={estrela}
-                  style={{ color: estrela <= 4 ? 'gold' : 'gray' }}
+                  src={estrela <= rating[0] ? "/Avaliacao.png" : "/AvaliacaoVazia.png"}
                   id='estrela'
-                >
-                  ★
-                </span>
+                />
               ))}
             </div>
-            <p className='texto' id='textoFeedback'>C"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus</p>
+            <p className='textoFeedback'>C"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus</p>
+          </div>
+        </div>
+                <div className='feedback'>
+          <img
+          alt='Foto da pessoa responsável pela conta que aplicou o feedback.'
+          src='/pessoa2-placeholder.jpg'
+          className='fotoFeedback'
+          />
+          <div className='conteudoFeedback'>
+            <div id='classificacao'>
+              {[1, 2, 3, 4, 5].map((estrela) => (
+                <img
+                  key={estrela}
+                  src={estrela <= rating[1] ? "/Avaliacao.png" : "/AvaliacaoVazia.png"}
+                  id='estrela'
+                />
+              ))}
+            </div>
+            <p className='textoFeedback'>C"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus</p>
           </div>
         </div>
       </article>
