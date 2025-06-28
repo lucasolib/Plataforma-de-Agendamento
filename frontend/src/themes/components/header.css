@@ -1,0 +1,71 @@
+#header {
+  background-color: #5d5d71; /* Cor de fundo aproximada da imagem */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px; /* Ajuste o padding conforme necessário */
+  color: white;
+}
+
+#logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinha o texto à esquerda */
+  font-weight: bold;
+}
+
+.logo-text-top {
+  font-size: 30px; /* Tamanho da fonte para "ROBSON" */
+  color: white;
+}
+
+.logo-text-bottom {
+  font-size: 18px; /* Tamanho da fonte para "de Iansã" */
+  color: #d1b18c; /* Cor dourada aproximada */
+  margin-top: -5px; /* Ajusta a posição vertical de "de Iansã" */
+  position: relative;
+}
+
+.logo-text-bottom::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px; /* Comprimento da linha */
+  height: 2px; /* Espessura da linha */
+  background-color: #d1b18c; /* Cor da linha */
+  margin-left: -55px; /* Ajusta a posição da linha em relação ao texto */
+}
+
+nav {
+  display: flex;
+  gap: 40px; /* Espaçamento entre os links de navegação */
+}
+
+.navHeader {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navHeader:hover {
+  color: #d1b18c; /* Mudar cor ao passar o mouse */
+}
+
+#botaoEntrar {
+  background-color: #8b1a2a; /* Cor de fundo do botão aproximada */
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#botaoEntrar:hover {
+  background-color: #a72132; /* Cor mais clara ao passar o mouse */
+}
