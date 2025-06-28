@@ -1,5 +1,7 @@
 import '../themes/pages/home.css'
 function Home() {
+  const rating: Array<number> = [4, 5]
+
 
   return (
     <main id='paginaInicial'>
@@ -14,18 +16,16 @@ function Home() {
         <div id="introducaoArea" className='animarEntrada'>
           <h1 id='bemVindo' className='titulo'>Seja bem vindo!</h1>
           <p className='texto' id='introducao'>
-            Se você busca respostas, orientação espiritual ou quer enxergar com mais clareza os caminhos da sua vida, conheça o trabalho
-            de Robson de Iansã, um respeitado pai de santo e especialista em jogos com baralho cigano. <br />
-            Por que marcar uma consulta com Robson de Iansã? <br />
-            - Atendimento humanizado e direto <br />
-            - Consultas online ou presenciais <br />
-            - Sigilo absoluto e respeito à sua fé <br />
-            - Direcionamento espiritual de acordo com os guias e orixás
+            Se você está em busca de respostas, clareza ou orientação espiritual para os caminhos da sua vida,
+            conheça Robson de Iansã, pai de santo experiente e respeitado por sua seriedade e dedicação.
+            Especialista em baralho cigano, ele oferece direcionamento espiritual baseado nos guias e orixás.
+            Seu atendimento é humanizado, com escuta atenta, empatia e profundo respeito às suas crenças.
+            Todas as consultas são realizadas com sigilo absoluto e compromisso com o seu bem-estar espiritual.
           </p>
         </div>
       </section>
       <article id='secaoCadastro'>
-        <h1 className='titulo' id='tituloJogos'>Como funcionam os Jogos?</h1>
+        <h1 className='titulo' id='tituloJogos'>Como funcionam os jogos?</h1>
         <div id='conteudoCadastro'>
           <img
             alt='Cartas empilhadas uma sobre a outra e no topo delas, a primeira, está decorada com uma estrela de 5 pontas, outras estrelas menores a sua volta e um circulo'
@@ -39,9 +39,50 @@ function Home() {
         </div>
         <div id='cadastroAcoes'>
           <label id='textoCadastro'>
-          Se interessou? Marque já uma consulta ou tire suas dúvidas
+          Marque já uma consulta ou tire suas dúvidas
           </label>
           <button id='botaoCadastro'>Cadastre-se</button>
+        </div>
+      </article>
+      <article id='secaoFeedback'>
+        <h1 className='titulo' id='tituloFeedback'>Avaliações</h1>
+        <div className='feedback'>
+          <img
+          alt='Foto da pessoa responsável pela conta que aplicou o feedback.'
+          src='/pessoa1-placeholder.jpg'
+          className='fotoFeedback'
+          />
+          <div className='conteudoFeedback'>
+            <div id='classificacao'>
+              {[1, 2, 3, 4, 5].map((estrela) => (
+                <img
+                  key={estrela}
+                  src={estrela <= rating[0] ? "/Avaliacao.png" : "/AvaliacaoVazia.png"}
+                  id='estrela'
+                />
+              ))}
+            </div>
+            <p className='textoFeedback'>C"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus</p>
+          </div>
+        </div>
+                <div className='feedback'>
+          <img
+          alt='Foto da pessoa responsável pela conta que aplicou o feedback.'
+          src='/pessoa2-placeholder.jpg'
+          className='fotoFeedback'
+          />
+          <div className='conteudoFeedback'>
+            <div id='classificacao'>
+              {[1, 2, 3, 4, 5].map((estrela) => (
+                <img
+                  key={estrela}
+                  src={estrela <= rating[1] ? "/Avaliacao.png" : "/AvaliacaoVazia.png"}
+                  id='estrela'
+                />
+              ))}
+            </div>
+            <p className='textoFeedback'>C"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus</p>
+          </div>
         </div>
       </article>
     </main>

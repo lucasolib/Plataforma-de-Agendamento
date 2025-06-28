@@ -1,5 +1,9 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
 #paginaInicial {
-  font-family: 'Georgia', serif;
   background-color: #fff;
   position: relative;
   max-width: fit-content;
@@ -31,20 +35,22 @@
 }
 
 #bemVindo {
-  font-size: 18px;
+  font-size: 16px;
   color: #aa8471;
   font-weight: bold;
   text-align: left;
   margin-bottom: 1rem;
   width: 100%;
+  font-family: 'playfair';
 }
 
 #introducao {
   width: 100%;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 18px;
   text-align: justify;
   max-width: 250px;
+  font-family: 'opensans';
 }
 
 #secaoCadastro {
@@ -61,35 +67,37 @@
   display: flex;
   align-self: flex-start;
   margin-left: 10px;
+  font-family: 'kenao';
 }
 
 #conteudoCadastro {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
   gap: 2rem;
   width: 100%;
   max-width: 1200px;
 }
 
 #fotoCartas {
-  width: 150px;
-  margin-top: 30px;
   height: auto;
-  object-fit: contain;
-  flex-shrink: 0;
+  margin-top: 30px;
   margin-left: 5px;
+  width: 150px;
+  position: relative;
+  top: -20px;
 }
 
 #explicacaoJogos {
   flex: 1;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.6;
   text-align: justify;
   min-width: 200px;
   margin-right: 20px;
   max-width: 300px;
+  font-family: 'opensans';
 }
 
 #cadastroAcoes {
@@ -106,28 +114,57 @@
 }
 
 #textoCadastro {
-  font-size: 12px;
+  font-size: 13px;
   color: black;
+  font-family: 'playfair';
 }
 
 #botaoCadastro {
   background-color: #63061c;
   color: white;
   border: none;
-  padding: 0.5rem 0.89rem;
-  font-size: 15px;
+  padding: 0.4rem 0.7rem;
+  font-size: 14px;
   border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s;
+  font-family: 'opensans';
 }
 
 #botaoCadastro:hover {
   background-color: #8f102e;
 }
 
+#secaoFeedback {
+  background: url('Fundo.png') no-repeat top / cover;
+  min-height: 400px;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+#tituloFeedback {
+  font-family: 'playfair';
+  margin-left: 30px;
+  margin-top: 30px;
+  padding-top: 50px;
+}
+
+#classificacao {
+  display: flex;
+  justify-content: space-between;
+  max-width: 150px;
+  margin-left: 10px;
+}
+
+#estrela {
+  width: 25px;
+  height: auto;
+}
+
 .titulo {
   font-weight: bold;
-  text-align: center;
+  text-align: start;
   margin-bottom: 1rem;
 }
 
@@ -135,6 +172,32 @@
   line-height: 1.8;
   text-align: justify;
   color: black;
+}
+
+.feedback{
+  display: flex;
+  margin: 30px 0;
+}
+
+.fotoFeedback {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.textoFeedback {
+  font-family: 'opensans';
+  font-size: 14px;
+  margin-left: 13px;
+  text-align: justify;
+}
+
+.conteudoFeedback {
+  background-color: #6a6a8070;
+  border-radius: 10px;
+  width: 65%;
 }
 
 @keyframes fadeInUp {
