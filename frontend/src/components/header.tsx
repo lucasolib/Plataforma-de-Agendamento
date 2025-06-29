@@ -3,12 +3,7 @@ import '../themes/components/header.css'
 function Header() {
   return (
     <header id='header'>
-      <img id='logo'/>
-      <nav>
-        <a className='navHeader' href="#">Avaliações</a>
-        <a className='navHeader' href="#">Contato</a>
-        <a className='navHeader' href="#">Sobre</a>
-      </nav>
+      <img src='Logo.png' alt='Logo estilizada com o nome "Robson de Iansã"' id='logo'/>
       <button id='botaoEntrar'>Entrar</button>
     </header>
   )

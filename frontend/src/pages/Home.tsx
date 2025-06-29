@@ -1,10 +1,12 @@
 import '../themes/pages/home.css'
+import Header from '../components/header'
+
 function Home() {
   const rating: Array<number> = [4, 5]
 
-
   return (
     <main id='paginaInicial'>
+      <Header />
       <section id='secaoIntroducao'>
       <img
           alt='Foto exibindo um hom em de cabelos brancos, com um rosto simpático e vestes azuis com desenhos coloridos. Suas mãos estão apoiadas em uma mesa

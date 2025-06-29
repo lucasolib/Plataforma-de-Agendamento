@@ -1,46 +1,24 @@
 #header {
-  background-color: #5d5d71; /* Cor de fundo aproximada da imagem */
+  background-color: #6a6a80; /* Cor de fundo aproximada da imagem */
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
-  padding: 15px 50px; /* Ajuste o padding conforme necessário */
+  padding: 15px 10px; /* Ajuste o padding conforme necessário */
   color: white;
+  max-width: 425px;
+  border-bottom: 4px solid #000;
 }
 
 #logo {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start; /* Alinha o texto à esquerda */
-  font-weight: bold;
+  width: 150px;
+  height: auto;
 }
 
-.logo-text-top {
-  font-size: 30px; /* Tamanho da fonte para "ROBSON" */
-  color: white;
-}
-
-.logo-text-bottom {
-  font-size: 18px; /* Tamanho da fonte para "de Iansã" */
-  color: #d1b18c; /* Cor dourada aproximada */
-  margin-top: -5px; /* Ajusta a posição vertical de "de Iansã" */
-  position: relative;
-}
-
-.logo-text-bottom::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 50px; /* Comprimento da linha */
-  height: 2px; /* Espessura da linha */
-  background-color: #d1b18c; /* Cor da linha */
-  margin-left: -55px; /* Ajusta a posição da linha em relação ao texto */
-}
-
-nav {
+#navbar {
   display: flex;
   gap: 40px; /* Espaçamento entre os links de navegação */
+  margin: 0 20px 0 40px;
 }
 
 .navHeader {
@@ -55,15 +33,17 @@ nav {
 }
 
 #botaoEntrar {
-  background-color: #8b1a2a; /* Cor de fundo do botão aproximada */
+  background-color: #63061c;
   color: white;
   border: none;
-  padding: 12px 25px;
-  border-radius: 5px;
+  padding: 8px 18px;
+  border-radius: 13px;
   cursor: pointer;
   font-size: 18px;
   font-weight: bold;
   transition: background-color 0.3s ease;
+  margin-left: auto; /* Adicionado */
+  margin-right: 15px;
 }
 
 #botaoEntrar:hover {
