@@ -1,0 +1,51 @@
+#header {
+  background-color: #6a6a80; /* Cor de fundo aproximada da imagem */
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 15px 10px; /* Ajuste o padding conforme necessário */
+  color: white;
+  max-width: 425px;
+  border-bottom: 4px solid #000;
+}
+
+#logo {
+  display: flex;
+  width: 150px;
+  height: auto;
+}
+
+#navbar {
+  display: flex;
+  gap: 40px; /* Espaçamento entre os links de navegação */
+  margin: 0 20px 0 40px;
+}
+
+.navHeader {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navHeader:hover {
+  color: #d1b18c; /* Mudar cor ao passar o mouse */
+}
+
+#botaoEntrar {
+  background-color: #63061c;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 13px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-left: auto; /* Adicionado */
+  margin-right: 15px;
+}
+
+#botaoEntrar:hover {
+  background-color: #a72132; /* Cor mais clara ao passar o mouse */
+}
