@@ -1,5 +1,6 @@
-import '../themes/pages/home.css'
-import Header from '../components/header'
+import '../themes/pages/home.css';
+import Header from '../components/header';
+import Footer from '../components/footer';
 
 function Home() {
   const rating: Array<number> = [4, 5]
@@ -87,6 +88,7 @@ function Home() {
           </div>
         </div>
       </article>
+      <Footer />
     </main>
   )
 }

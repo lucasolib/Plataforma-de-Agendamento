@@ -1,0 +1,74 @@
+#footer {
+  background-color: #63061c;
+  padding: 15px 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+#footerConteudo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.barraCompleta {
+  position: relative;
+  width: 80%; /* Ajuste a largura conforme necessário */
+  height: 4px; /* Espessura da linha principal */
+  background-color: white;
+  margin: 50px auto; /* Centraliza a barra e adiciona margem */
+}
+
+.barraCompleta::before,
+.barraCompleta::after {
+  content: "";
+  position: absolute;
+  top: 50%; /* Centraliza verticalmente com a barra */
+  transform: translateY(-50%); /* Ajusta para centralização exata */
+  width: 2px; /* Largura da "ponta" vertical */
+  height: 12px; /* Altura da "ponta" vertical */
+  background-color: white;
+}
+
+.barraCompleta::before {
+  left: 0; /* Posiciona no início da barra */
+  /* Adicionar a linha horizontal do T se necessário, ou ajustar a largura da barra principal */
+}
+
+.barraCompleta::after {
+  right: 0; /* Posiciona no final da barra */
+  /* Adicionar a linha horizontal do T se necessário, ou ajustar a largura da barra principal */
+}
+.tituloLinks {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding-bottom: 5px;
+    align-items: center;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  max-width: fit-content;
+  padding: 10px 0;
+  border-radius: 4px;
+  align-items: center;
+}
+
+.links a {
+  color: white;
+  margin-top: 7px;
+  text-decoration: none;
+  font-size: 14px;
+  align-self: center;
+}
+
+.links a:hover {
+    color: #0066cc;
+}
