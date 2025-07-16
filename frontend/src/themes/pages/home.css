@@ -3,6 +3,13 @@ body, html {
   padding: 0;
 }
 
+#fotoPerfil,
+#botaoCadastro,
+#bemVindo {
+  position: relative;
+  z-index: 1;
+}
+
 #paginaInicial {
   background-color: #fff;
   position: relative;
@@ -162,6 +169,21 @@ body, html {
   height: auto;
 }
 
+#expandirFeedback {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+#expandirFeedback span {
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border-radius: 50%;
+}
 .titulo {
   font-weight: bold;
   text-align: start;
@@ -191,6 +213,7 @@ body, html {
   font-family: 'opensans';
   font-size: 14px;
   margin-left: 13px;
+  margin-right: 10px;
   text-align: justify;
 }
 

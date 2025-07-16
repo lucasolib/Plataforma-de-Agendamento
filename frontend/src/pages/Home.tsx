@@ -87,6 +87,11 @@ function Home() {
             <p className='textoFeedback'>C"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus</p>
           </div>
         </div>
+        <div id='expandirFeedback'>
+          <span />
+          <span />
+          <span />
+        </div>
       </article>
       <Footer />
     </main>

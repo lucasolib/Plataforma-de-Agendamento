@@ -14,31 +14,29 @@
 
 .barraCompleta {
   position: relative;
-  width: 80%; /* Ajuste a largura conforme necessário */
-  height: 4px; /* Espessura da linha principal */
+  width: 90%;
+  height: 4px;
   background-color: white;
-  margin: 50px auto; /* Centraliza a barra e adiciona margem */
+  margin: 50px auto;
 }
 
 .barraCompleta::before,
 .barraCompleta::after {
   content: "";
   position: absolute;
-  top: 50%; /* Centraliza verticalmente com a barra */
-  transform: translateY(-50%); /* Ajusta para centralização exata */
-  width: 2px; /* Largura da "ponta" vertical */
-  height: 12px; /* Altura da "ponta" vertical */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 12px;
   background-color: white;
 }
 
 .barraCompleta::before {
-  left: 0; /* Posiciona no início da barra */
-  /* Adicionar a linha horizontal do T se necessário, ou ajustar a largura da barra principal */
+  left: 0;
 }
 
 .barraCompleta::after {
-  right: 0; /* Posiciona no final da barra */
-  /* Adicionar a linha horizontal do T se necessário, ou ajustar a largura da barra principal */
+  right: 0;
 }
 .tituloLinks {
     display: flex;
@@ -50,6 +48,7 @@
     cursor: pointer;
     padding-bottom: 5px;
     align-items: center;
+    font-family: 'playfair';
 }
 
 .links {
@@ -67,6 +66,7 @@
   text-decoration: none;
   font-size: 14px;
   align-self: center;
+  font-family: 'playfair';
 }
 
 .links a:hover {
