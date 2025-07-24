@@ -5,7 +5,7 @@ function Login() {
     <main id='mainLogin'>
       <div id='paginaLogin'> 
         <form action="">
-          <h1>Login</h1>
+          <h1>Entrar</h1>
           <div className='inputBox'>
             <input type='text' placeholder='Usuário' required/>
             <img src='./user.png'/>
